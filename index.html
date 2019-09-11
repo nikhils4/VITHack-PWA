@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="manifest" href="manifest.json">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- for app icons in iOS -->
 	<link rel="apple-touch-icon" href="./icons/apple-icon.png">
@@ -24,19 +27,95 @@
 
 	<title>Home</title>
 </head>
-<body style="text-align: center">
-	This is the home screen - magic starts here!
+
+<body>
 
 
-<script>
-	if('serviceWorker' in navigator) {
-		navigator.serviceWorker.register('/sw.js')
-			.then(function() {
+
+	<div id="myCarousel" class="carousel slide" data-ride="carousel" style="padding-top : 80px">
+		<!-- Wrapper for slides -->
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="col-12" style="font-size: 30px; font-weight : bolder">Welcome To</div>
+					<div class="col-12" style="color : #007bff; font-size : 30px; font-weight : bolder">VIT Hack</div>
+					<img class="d-block" src="./icons/logo.png" style="width : 200px; margin: auto auto" alt="First slide">
+					<div class="col-12" style="padding-left : 20px; padding-right : 20px; text-align : center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium provident numquam
+						voluptatem aliquid accusantium, similique dolorum quasi ducimus aperiam adipisci alias ex eos, optio,
+						perferendis eius quod quas maxime assumenda.</div>
+
+				</div>
+				<div class="carousel-item">
+					<div class="col-12" style="font-size: 30px; font-weight : bolder">Welcome To</div>
+					<div class="col-12" style="color : #007bff; font-size : 30px; font-weight : bolder">VIT Hack</div>
+					<img class="d-block" src="./icons/logo.png" style="width : 200px; margin: auto auto" alt="First slide">
+
+					<div class="col-12" style="padding-left : 20px; padding-right : 20px; text-align : center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium provident numquam
+						voluptatem aliquid accusantium, similique dolorum quasi ducimus aperiam adipisci alias ex eos, optio,
+						perferendis eius quod quas maxime assumenda.</div>
+				</div>
+				<div class="carousel-item">
+					<div class="col-12" style="font-size: 30px; font-weight : bolder">Welcome To</div>
+					<div class="col-12" style="color : #007bff; font-size : 30px; font-weight : bolder">VIT Hack</div>
+					<img class="d-block" src="./icons/logo.png" style="width : 200px; margin: auto auto" alt="First slide">
+
+					<div class="col-12" style="padding-left : 20px; padding-right : 20px; text-align : center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium provident numquam
+						voluptatem aliquid accusantium, similique dolorum quasi ducimus aperiam adipisci alias ex eos, optio,
+						perferendis eius quod quas maxime assumenda.</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			</a>
+		</div>
+
+		<div class="container-fluid" style="margin-top : 70px; text-align : center">
+			<div class="row">
+				<div class="col-12">
+					<button class="btn btn-primary" style="background-color: #007bff;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding-right : 50px; padding-left : 50px; padding-top : 10px ;padding-bottom : 10px; border-radius : 10px
+					">Login</button>
+				</div>
+
+				<div class="col-12" style="margin-top : 40px">
+					<button class="btn btn-primary" style="background-color: transparent; border : none; color : gray">Skip
+						Login</button>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"></script>
+
+
+
+
+		<script>
+			if ('serviceWorker' in navigator) {
+				navigator.serviceWorker.register('/sw.js')
+					.then(function () {
 						console.log('Service Worker Registered');
-			});
-	}
-</script>
+					});
+			}
+		</script>
 
 
 </body>
+
 </html>
