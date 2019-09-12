@@ -1,7 +1,8 @@
 var cacheName = 'vithackpwa';
 var filesToCache = [
 	'/index.html',
-	'/styles/index.css'
+  '/styles/index.css',
+  '/icons/logo.png'
 ];
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
