@@ -1,7 +1,13 @@
 var cacheName = 'vithackpwa';
 var filesToCache = [
 	'/index.html',
-  '/icons/logo.png'
+  '/icons/logo.png',
+  '/about.html',
+  'contact-us.html',
+  'home.html',
+  '/login.html',
+  'qrcode.html',
+  'qrshow.html'
 ];
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
