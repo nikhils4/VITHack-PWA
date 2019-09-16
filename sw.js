@@ -1,7 +1,6 @@
 var cacheName = 'vithackpwa';
 var filesToCache = [
 	'/index.html',
-  '/styles/index.css',
   '/icons/logo.png'
 ];
 self.addEventListener('install', function(e) {
@@ -10,7 +9,7 @@ self.addEventListener('install', function(e) {
     caches.open(cacheName).then(function(cache) {
       console.log('[ServiceWorker] Caching app shell');
       return cache.addAll(filesToCache);
-    })
+    })                                                                                                                                                                                                                    
   );
 });
 self.addEventListener('activate',  event => {

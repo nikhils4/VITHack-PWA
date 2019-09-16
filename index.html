@@ -78,12 +78,12 @@
 		<div class="container-fluid" style="margin-top : 70px; text-align : center">
 			<div class="row">
 				<div class="col-12">
-					<button class="btn btn-primary" style="background-color: #007bff;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding-right : 50px; padding-left : 50px; padding-top : 10px ;padding-bottom : 10px; border-radius : 10px
+					<button id="login" class="btn btn-primary" style="background-color: #007bff;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding-right : 50px; padding-left : 50px; padding-top : 10px ;padding-bottom : 10px; border-radius : 10px
 					">Login</button>
 				</div>
 
 				<div class="col-12" style="margin-top : 40px; margin-bottom: 40px">
-					<button class="btn btn-primary" style="background-color: transparent; border : none; color : gray">Skip
+					<button id="skip" class="btn btn-primary" style="background-color: transparent; border : none; color : gray;outline : none; border : none">Skip
 						Login</button>
 				</div>
 			</div>
@@ -102,7 +102,6 @@
 
 
 
-
 		<script>
 			if ('serviceWorker' in navigator) {
 				navigator.serviceWorker.register('/sw.js')
@@ -110,6 +109,14 @@
 						console.log('Service Worker Registered');
 					});
 			}
+
+			document.getElementById("skip").addEventListener("click", () => {
+				window.location.href = "home.html";
+			})
+
+			document.getElementById("login").addEventListener("click", () => {
+				window.location.href = "login.html";
+			})
 		</script>
 		<script src="./ios-popup.js"></script>
 
