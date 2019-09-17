@@ -15,22 +15,52 @@
 	<div class="container-fluid">
 		<div class="row" style="text-align: center">
 			<div class="col-12" style="font-size: 20px; font-weight : bolder; margin-top : 20px">
-				<img src="./icons/left-arrow.svg" style="height : 25px; float : left" id="back">
-				<span style="transform: translateX(-220%)">The Tech Team</span>
+				<img src="./icons/left-arrow.svg" style="height : 25px; position: absolute; left : 2%; z-index: 100" id="back">
+				<p style="transform: translateX(-2%)">The Tech Team</p>
+			</div>
+			<div class="col-12" style="margin-top : 10px">
+				Made with <span style="color : #007bff">&hearts;</span> by DSC VIT
+				</div>
+
+			<div class="col-12" style="margin-top : 10px">
+				<img class="img-responsive" src="./icons/Team.JPG" style="width : 100%; margin : auto auto">
 			</div>
 
-			<div class="col-12" style="margin-top : 30px">
-				<img class="img-responsive" src="./icons/Team.JPG" style="width : 200px; margin : auto auto">
-			</div>
+			<div class="col-12" style="margin-top : 20px; ">
+				<div style="margin-bottom: 20px">
+					From left to right
+				</div>
 
-			<div class="col-12" style="margin-top : 50px">
-				<input type="text" placeholder="Code" id="code"
-					style="padding : 8px 10px; border : 1px solid lightgray; border-radius : 5px;">
-			</div>
-
-			<div class="col-12" style="margin-top : 60px">
-				<button class="btn btn-primary"
-					style="background-color: #007bff;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding-right : 50px; padding-left : 50px; padding-top : 10px ;padding-bottom : 10px; border-radius : 10px">Login</button>
+				<div style="margin-top : 5px; margin-bottom : 10px">
+					<span style="color : #007bff; font-size : 18px; font-weight : bolder">
+						Angad Sharma
+					</span><br>
+					(Backend Developer)
+				</div>
+				<div style="margin-top : 10px; margin-bottom : 10px">
+						<span style="color : #007bff; font-size : 18px; font-weight : bolder">
+								Prateek Mewara
+							</span><br>
+							(Android Developer)
+				</div>
+				<div style="margin-top : 10px; margin-bottom : 10px">
+						<span style="color : #007bff; font-size : 18px; font-weight : bolder">
+								Ayush Priya
+							</span><br>
+							(Team Lead)
+				</div>
+				<div style="margin-top : 10px; margin-bottom : 10px">
+						<span style="color : #007bff; font-size : 18px; font-weight : bolder">
+								Satkriti Singh
+							</span><br>
+							(Android Developer)
+				</div>
+				<div style="margin-top : 10px; margin-bottom : 10px">
+						<span style="color : #007bff; font-size : 18px; font-weight : bolder">
+								Nikhil Singh
+							</span><br>
+							(Frontend Developer)
+				</div>
 			</div>
 
 		</div>
@@ -50,11 +80,8 @@
 	<script>
 
 		window.onload = () => {
-			document.getElementById("code").addEventListener("click", () => {
-
-			})
 			document.getElementById("back").addEventListener("click", () => {
-				window.location.href = "qrcode.html"
+				window.location.href = "contact-us.html"
 			})
 		}
 
