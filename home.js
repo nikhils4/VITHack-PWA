@@ -15,9 +15,7 @@ window.onload = () => {
 		document.getElementById("daytwo").style.display = "none";
 		document.getElementById("daythree").style.display = "block";
 	})
-	document.getElementById("logout").addEventListener("click", () => {
-		window.location.href = "index.html"
-	}) 
+
 	let id = ["one", "two", "three"];
 	id.forEach(e => {
 		document.getElementById(e).addEventListener("click", () => {
