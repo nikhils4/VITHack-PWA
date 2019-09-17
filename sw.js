@@ -3,11 +3,12 @@ var filesToCache = [
 	'/index.html',
   '/icons/logo.png',
   '/about.html',
-  'contact-us.html',
-  'home.html',
+  '/contact-us.html',
+  '/home.html',
   '/login.html',
-  'qrcode.html',
-  'qrshow.html',
+  '/qrcode.html',
+  '/qrshow.html',
+  '/tech.html',
   './icons/call.svg',
   './icons/callblue.svg',
   './icons/focusblue.svg',
@@ -16,7 +17,10 @@ var filesToCache = [
   './icons/home.svg',
   './icons/infoblue.svg',
   './icons/info.svg',
-  './icons/power.svg'
+  './icons/power.svg',
+  './icons/one.png',
+  './icons/two.png',
+  './icons/three.png',
 ];
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');

@@ -27,10 +27,13 @@
 				Login
 			</div>
 
+			
 			<div class="col-12" style="margin-top : 70px">
 				<img class="img-responsive" src="./icons/logo.png" style="width : 200px; margin : auto auto">
 			</div>
-
+			<div class="col-2"></div>
+			<div class="col-8" id="error" style="margin-right : 50px;padding : 10px; border : 1px solid red; border-radius : 10px; font-size : 15px; display: none "></div>
+			<div class="col-2"></div>
 			<div class="col-12" style="margin-top : 50px">
 				<input type="text" placeholder="Code" id="code"
 					style="padding : 8px 10px; border : 1px solid lightgray; border-radius : 5px;">
@@ -127,15 +130,16 @@
 								if (JSON.parse(xmlhttp.responseText).err == "Not found") {
 									document.getElementById("loginp").style.display = "block";
 									document.getElementById("loadp").style.display = "none";
+									document.getElementById("error").style.display = "block"
+									document.getElementById("error").innerHTML = "Please enter valid code"
 								} else {
 									document.getElementById("qrcodep").style.display = "block";
 									document.getElementById("loadp").style.display = "none";
 									document.getElementById("qr-img").setAttribute("src", `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${JSON.parse(xmlhttp.responseText).email}`);
 									document.getElementById("email").innerHTML = JSON.parse(xmlhttp.responseText).email;
 									document.getElementById("teamid").innerHTML = document.getElementById("code").value;
-									
 								}
-						}
+						}	
 				};
 			})
 			document.getElementById("back").addEventListener("click", () => {
