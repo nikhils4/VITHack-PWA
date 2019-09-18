@@ -8,12 +8,10 @@
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<title>Login</title>
 	<style>
-	
-		#loadp, #qrcodep {
+		#loadp,
+		#qrcodep {
 			display: none
 		}
-
-
 	</style>
 </head>
 
@@ -27,12 +25,14 @@
 				Login
 			</div>
 
-			
+
 			<div class="col-12" style="margin-top : 70px">
 				<img class="img-responsive" src="./icons/logo.png" style="width : 200px; margin : auto auto">
 			</div>
 			<div class="col-2"></div>
-			<div class="col-8" id="error" style="margin-right : 50px;padding : 10px; border : 1px solid red; border-radius : 10px; font-size : 15px; display: none "></div>
+			<div class="col-8" id="error"
+				style="margin-right : 50px;padding : 10px; border : 1px solid red; border-radius : 10px; font-size : 15px; display: none ">
+			</div>
 			<div class="col-2"></div>
 			<div class="col-12" style="margin-top : 50px">
 				<input type="text" placeholder="Code" id="code"
@@ -49,60 +49,76 @@
 
 
 	<div class="container-fluid" id="loadp">
-			<div class="row" style="text-align: center; margin-top : 250px">
-				<div class="col-12" style="font-size: 20px; font-weight : bolder; margin-top : 20px">
-					<img src="./icons/load.gif" style="height : 50px;">
-				</div>
-				<div class="col-12" style="font-size: 20px; font-weight : bolder; margin-top : 20px">
-						Loading...
-					</div>
+		<div class="row" style="text-align: center; margin-top : 250px">
+			<div class="col-12" style="font-size: 20px; font-weight : bolder; margin-top : 20px">
+				<img src="./icons/load.gif" style="height : 50px;">
+			</div>
+			<div class="col-12" style="font-size: 20px; font-weight : bolder; margin-top : 20px">
+				Loading...
 			</div>
 		</div>
+	</div>
 
 
 
 
 
 	<div class="container-fluid" id="qrcodep">
-			<div class="row">
-	
-					<div class="col-12" style="padding-left : 20px; margin-top : 20px; font-size : 25px; font-weight : bolder">
-							<img src="./icons/power.svg" style="height: 30px; float : right" id="logout">
-						</div>
-	
-				<div class="col-12" style="margin-top : 20px; font-size : 25px; font-weight : bolder">
-					QR code
-				</div>
-	
-				<div class="col-12" style="margin-top : 100px; text-align : center">
-					<img src="./icons/qr.png" style="height: 150px" id="qr-img">
-				</div>
-	
-				<div class="col-12" style="text-align: center; margin-top : 80px">
-					<p><span style="font-weight : bolder">Email : </span><span id="email">nikhilsingh498@gmail.com</span></p>
-					<p><span style="font-weight : bolder">Team ID : </span><span id="teamid">$$$$$$$$$</span></p>
-				</div>
+		<div class="row">
+
+			<div class="col-12" style="padding-left : 20px; margin-top : 20px; font-size : 25px; font-weight : bolder">
+				<img src="./icons/power.svg" style="height: 30px; float : right" id="logout">
 			</div>
-	
-			<div class="row" style="position: fixed; bottom : 0; width : 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background-color: white">
-					<div class="col-3" style="text-align: center; position: relative; padding : 20px">
-						<a href="./home.html" style="text-decoration: none"><img src="./icons/home.svg" style="height: 25px; margin : auto auto"></a>
-					</div>
-					<div class="col-3" style="text-align: center;; padding : 20px">
-							<a href="./about.html" style="text-decoration: none"><img src="./icons/info.svg" style="height: 25px; margin: auto auto"></a>
-					</div>
-					<div class="col-3" style="text-align: center; padding : 20px">
-							<a href="./qrcode.html" style="text-decoration: none"><img src="./icons/focusblue.svg" style="height: 25px; margin : auto auto"></a>
-					</div>
-					<div class="col-3" style="text-align: center; padding : 20px">
-							<a href="./contact-us.html" style="text-decoration: none"><img src="./icons/call.svg" style="height: 25px; margin : auto auto"></a>
-					</div>
-		
-				</div>
-	
+
+			<div class="col-12" style="margin-top : 20px; font-size : 25px; font-weight : bolder">
+				QR code
+			</div>
+
+			<div class="col-4"></div>
+
+			<div class="col-4" id="team" style="text-align: center; margin-top : 50px">
+
+				<select class="form-control"></select>
+
+			</div>
+
+			<div class="col-4"></div>
+
+
+			<div class="col-12" style="margin-top : 50px; text-align : center">
+				<img src="./icons/qr.png" style="height: 150px" id="qr-img">
+			</div>
+
+			<div class="col-12" style="text-align: center; margin-top : 80px">
+				<p><span style="font-weight : bolder">Email : </span><span id="email"></span></p>
+				<p><span style="font-weight : bolder">Team ID : </span><span id="teamid"></span></p>
 			</div>
 		</div>
-	
+
+		<div class="row"
+			style="position: fixed; bottom : 0; width : 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background-color: white">
+			<div class="col-3" style="text-align: center; position: relative; padding : 20px">
+				<a href="./home.html" style="text-decoration: none"><img src="./icons/home.svg"
+						style="height: 25px; margin : auto auto"></a>
+			</div>
+			<div class="col-3" style="text-align: center;; padding : 20px">
+				<a href="./about.html" style="text-decoration: none"><img src="./icons/info.svg"
+						style="height: 25px; margin: auto auto"></a>
+			</div>
+			<div class="col-3" style="text-align: center; padding : 20px">
+				<a href="./qrcode.html" style="text-decoration: none"><img src="./icons/focusblue.svg"
+						style="height: 25px; margin : auto auto"></a>
+			</div>
+			<div class="col-3" style="text-align: center; padding : 20px">
+				<a href="./contact-us.html" style="text-decoration: none"><img src="./icons/call.svg"
+						style="height: 25px; margin : auto auto"></a>
+			</div>
+
+		</div>
+
+	</div>
+	</div>
+
 
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -118,33 +134,57 @@
 	<script>
 
 		window.onload = () => {
+
+
+
+
+
+
 			document.getElementById("login").addEventListener("click", () => {
 				document.getElementById("loginp").style.display = "none";
 				document.getElementById("loadp").style.display = "block";
 				var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance 
 				xmlhttp.open("POST", "https://vithack.herokuapp.com/mobile/auth/login");
 				xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-				xmlhttp.send(JSON.stringify({ "passcode": document.getElementById("code").value}));
+				xmlhttp.send(JSON.stringify({ "passcode": document.getElementById("code").value }));
 				xmlhttp.onreadystatechange = function () {
-						if (xmlhttp.readyState == 4) {
-								if (JSON.parse(xmlhttp.responseText).err == "Not found") {
-									document.getElementById("loginp").style.display = "block";
-									document.getElementById("loadp").style.display = "none";
-									document.getElementById("error").style.display = "block"
-									document.getElementById("error").innerHTML = "Please enter valid code"
-								} else {
-									document.getElementById("qrcodep").style.display = "block";
-									document.getElementById("loadp").style.display = "none";
-									document.getElementById("qr-img").setAttribute("src", `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${JSON.parse(xmlhttp.responseText).email}`);
-									document.getElementById("email").innerHTML = JSON.parse(xmlhttp.responseText).email;
-									document.getElementById("teamid").innerHTML = document.getElementById("code").value;
-								}
-						}	
+					if (xmlhttp.readyState == 4) {
+						if (JSON.parse(xmlhttp.responseText).err == "Not found") {
+							document.getElementById("loginp").style.display = "block";
+							document.getElementById("loadp").style.display = "none";
+							document.getElementById("error").style.display = "block"
+							document.getElementById("error").innerHTML = "Please enter valid code"
+						} else {
+
+							let team = JSON.parse(xmlhttp.responseText).teamMates;
+							let m = document.createElement("option");
+								let text = document.createTextNode(JSON.parse(xmlhttp.responseText).email);
+								m.appendChild(text);
+								document.getElementsByClassName("form-control")[0].appendChild(m);
+							for (i = 0; i < team.length; i++) {
+								let m = document.createElement("option");
+								let text = document.createTextNode(team[i]);
+								m.appendChild(text);
+								document.getElementsByClassName("form-control")[0].appendChild(m);
+							}
+
+							document.getElementById("qrcodep").style.display = "block";
+							document.getElementById("loadp").style.display = "none";
+							document.getElementById("qr-img").setAttribute("src", `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${JSON.parse(xmlhttp.responseText).email}`);
+							document.getElementById("email").innerHTML = JSON.parse(xmlhttp.responseText).email;
+							document.getElementById("teamid").innerHTML = document.getElementById("code").value;
+						}
+					}
 				};
 			})
 			document.getElementById("back").addEventListener("click", () => {
 				window.location.href = "qrcode.html"
 			})
+
+			function listQ() {
+				document.getElementById("qr-img").setAttribute("src", `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${document.getElementsByClassName("form-control")[0].value}`);
+			}
+			document.getElementById("team").onchange = listQ;
 		}
 
 	</script>
