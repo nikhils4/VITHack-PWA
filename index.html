@@ -25,25 +25,6 @@
 	<link href="/apple_splash_750.png" sizes="750x1334" rel="apple-touch-startup-image" />
 	<link href="/apple_splash_640.png" sizes="640x1136" rel="apple-touch-startup-image" /> -->
 
-
-
-	<script>
-			if ('serviceWorker' in navigator) {
-				navigator.serviceWorker.register('/sw.js')
-					.then(function () {
-						console.log('Service Worker Registered');
-					});
-			}
-
-			document.getElementById("skip").addEventListener("click", () => {
-				window.location.href = "home.html";
-			})
-
-			document.getElementById("login").addEventListener("click", () => {
-				window.location.href = "login.html";
-			})
-		</script>
-		<script src="./ios-popup.js"></script>
 	<title>Home</title>
 </head>
 
@@ -117,6 +98,25 @@
 			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 			crossorigin="anonymous"></script>
 
+
+
+		<script>
+			if ('serviceWorker' in navigator) {
+				navigator.serviceWorker.register('/sw.js')
+					.then(function () {
+						console.log('Service Worker Registered');
+					});
+			}
+
+			document.getElementById("skip").addEventListener("click", () => {
+				window.location.href = "home.html";
+			})
+
+			document.getElementById("login").addEventListener("click", () => {
+				window.location.href = "login.html";
+			})
+		</script>
+		<script src="./ios-popup.js"></script>
 
 </body>
 
