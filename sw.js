@@ -53,7 +53,8 @@ var filesToCache = [
   './icons/Sameeran Bandishti .jpg',
   './icons/Dhruvika_Sharma.JPG',
   './icons/Meherdeep_Thakur.jpg',
-  './icons/Vipul_Kothari.jpg'
+  './icons/Vipul_Kothari.jpg',
+  './icons/left-arrow.jpg'
 ];
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
