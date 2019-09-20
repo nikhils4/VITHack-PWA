@@ -150,7 +150,13 @@
 							document.getElementById("loadp").style.display = "none";
 							document.getElementById("error").style.display = "block"
 							document.getElementById("error").innerHTML = "Please enter valid code"
-						} else {
+						} else if (JSON.parse(xmlhttp.responseText).err == "Max team login size reached") {
+							document.getElementById("loginp").style.display = "block";
+							document.getElementById("loadp").style.display = "none";
+							document.getElementById("error").style.display = "block"
+							document.getElementById("error").innerHTML = "Max team login size reached"
+						}
+						else {
 
 							let team = JSON.parse(xmlhttp.responseText).teamMates;
 							let m = document.createElement("option");
